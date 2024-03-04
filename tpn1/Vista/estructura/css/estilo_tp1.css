@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Michroma', sans-serif;
+}
+
+/*-------------------------------------------- CONTENEDORES EXTERNOS -------------------------------*/
+#contenedorCuerpo {
+    background-color:black;
+    width:100%;
+}
+
+#contenedorPagina {
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+/*-------------------------------------------- CONTENEDOR PRINCIPAL VS PIE -------------------------*/
+#contenedorGeneral {
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 233, 233);
+}
+
+/*-------------------------------------------- CONTENIDO BANNER ------------------------------------*/
+#banner {
+    height: 140px;
+    background: linear-gradient(to right, rgb(22, 48, 71), rgb(61, 25, 9));
+    transition: background 0.5s ease;
+    padding: 20px;
+}
+
+#tituloMateria {
+    color:white;
+    text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#tituloGrupo {
+    color:white;
+    text-align: center;
+    text-shadow: -5px 4px 4px rgb(15, 27, 36);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------- MENU NAVEGACIÓN TPS ---------------------------------*/
+#menuTrabajos {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: black;
+}
+
+.botonTrabajos {
+    padding: 15px 0px 15px 0px;
+    width:100%;
+    border:2px solid;
+    border-radius: 0px;
+    background-color: rgb(86, 86, 86);
+    font-weight: bold;
+    font-size: large;
+}
+
+.botonTrabajos:hover {
+    color:rgb(100, 120, 198);
+}
+
+/*-------------------------------------------- MENU NAVEGACIÓN EJERCICIOS --------------------------*/
+#menuEjercicios {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: black;
+}
+
+.botonEjercicios{
+    padding: 15px 0px 15px 0px;
+    width:100%;
+    border:2px solid;
+    border-radius: 0px;
+    background-color: rgb(86, 86, 86);
+    font-weight: bold;
+}
+
+.botonEjercicios:hover {
+    color:rgb(100, 120, 198);
+}
+
+.botonActual {
+    color:rgb(138, 230, 135);
+    text-shadow: -5px 4px 4px rgb(21, 49, 27);
+    box-shadow: 0px 4px 4px rgb(21, 49, 27);
+}
+
+/*-------------------------------------------- DIV ENUNCIADO ---------------------------------------*/
+.contenedorEnunciado {
+    border:1px solid black;
+    padding: 10px;
+    background-color: rgb(191, 192, 196);
+    text-align: center;
+}
+
+/*-------------------------------------------- DIV CENTRADO (PRINCIPAL) ----------------------------*/
+.contenedorCentrado {
+    border:1px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: rgb(191, 192, 196);
+    float:left;
+}
+
+.contenedorCentrado a{
+    font-weight:bold;
+    color:rgb(33, 79, 159);
+}
+
+.contenedorCentrado a:hover{
+    color:rgb(9, 148, 190);
+}
+
+.contenedorCentradoChico {
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+#contieneLinkVolver {
+    width: 100%;
+    text-align: center;
+}
+
+/*-------------------------------------------- TABLA -----------------------------------------------*/
+.contenedorCentrado table {
+    border-collapse: separate;
+    border-spacing: 10px 10px; /* Ajusta el primer valor para el espacio vertical y el segundo valor para el espacio horizontal */
+}
+
+.botonFormulario {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*-------------------------------------------- PIE DE PÁGINA ---------------------------------------*/
+#pieDePagina {
+    height: 150px;
+    background: linear-gradient(to right, rgb(22, 48, 71), rgb(61, 25, 9));
+    transition: background 0.5s ease;
+    width:100%;
+    padding: 10px;
+}
+
+#pieDePagina p {
+    color:white;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+#listaNombres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#listaNombres li {
+    color:white;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
